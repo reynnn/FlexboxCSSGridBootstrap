@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Grid</title>
+  <style>
+
+  .h5{
+    
+  }
+    .wrapper{
+      display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat(3, 1fr);
+      grid-gap:1em;
+      /* grid-auto-rows:100px; */
+      grid-auto-rows: minmax(100px, auto);
+    }
+
+    .nested{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      grid-auto-rows: 85px;
+      grid-gap:1em;
+    }
+
+    .wrapper > div{
+      background:pink;
+      padding:1em;
+      color: white;
+    }
+    .wrapper > div:nth-child(odd){
+      background:pink;
+
+    }
+
+    .nested > div{
+      padding:1em;
+    }
+  </style>
+</head>
+<body>
+  <style>
+h1 {
+  text-align: center;
+}
+</style>
+  <h1>CSS Grid</h1>
+  <div class="wrapper">
+    <div>
+     
+
+    </div>
+    <div>
+      
+      
+          </div>
+    <div class="nested">
+      <div> </div>
+      <div> </div>
+       <div> </div>
+      <div> </div>
+         <div> </div>
+          <div> </div>
+     
+    </div>
+    <div>
+      
+    </div>
+    <div>
+       
+
+    </div>
+    <div>
+        
+        
+    </div>
+    <div>
+    
+              
+    </div>
+    <div>
+    
+              
+    </div>
+    <div>
+    
+              
+    </div>
+  </div>
+</body>
+</html>
